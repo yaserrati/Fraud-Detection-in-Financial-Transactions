@@ -25,7 +25,7 @@ def get_dataframe_and_response(file_path):
         return json.loads(item)
     else:
         return jsonify({'error': 'Data not found'}), 404
-
+#These routes define three different endpoints:
 # "get all transactions. (transactions endpoint)"
 @app.route("/api/transactions/", methods=['GET'])
 def get_all_transactions():
